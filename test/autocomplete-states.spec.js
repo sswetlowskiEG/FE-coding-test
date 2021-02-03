@@ -122,7 +122,7 @@ describe('filterStates', function () {
             expect(filterStates('ZZ')).to.eql([]);
         });
         it('should find the exact abbreviation match', function () {
-            expect(filterStates('WY').slice()).to.eq(["Wyoming"]);
+            expect(filterStates('NE').slice()).to.eq("Nebraska");
         });
         it('should return states that start with the input text', function () {
             expect(filterStates('NE')).to.include.members(["Nebraska", "New Hampshire", "New Jersey", "New Mexico", "New York", "Nevada"])
